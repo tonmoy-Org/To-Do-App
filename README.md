@@ -17,7 +17,8 @@ A simple and efficient To-Do application built with React and Redux, allowing us
 - **Database**: MongoDB
 - **Styling**: Material-UI
 - **Notifications**: React-Toastify
-- 
+  
 ### Main View
 
-![Main View]([screenshots/main-view.png](https://ibb.co/fqjHCQZ))
+![Main View](https://i.ibb.co/fqjHCQZ/main-view.png)
+
