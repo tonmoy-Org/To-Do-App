@@ -20,7 +20,7 @@ const ToDoApp = () => {
 
     const fetchTasks = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/tasks');
+            const response = await fetch('https://to-do-mongoose-server-two.vercel.app/api/tasks');
             const tasks = await response.json();
             dispatch(setTasks(tasks));
         } catch (error) {
@@ -56,7 +56,7 @@ const ToDoApp = () => {
             setLoading(true);
             const newTask = { task };
             try {
-                const response = await fetch('http://localhost:5000/api/tasks/newTask', {
+                const response = await fetch('https://to-do-mongoose-server-two.vercel.app/api/tasks/newTask', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ const ToDoApp = () => {
             setLoading(true);
             const updatedTask = { task };
             try {
-                const response = await fetch(`http://localhost:5000/api/tasks/update-tasks/${currentTaskId}`, {
+                const response = await fetch(`https://to-do-mongoose-server-two.vercel.app/api/tasks/update-tasks/${currentTaskId}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -118,7 +118,7 @@ const ToDoApp = () => {
     const handleDeleteTask = async (id) => {
         setLoading(true);
         try {
-            const response = await fetch(`http://localhost:5000/api/tasks/tasks-delete/${id}`, {
+            const response = await fetch(`https://to-do-mongoose-server-two.vercel.app/api/tasks/tasks-delete/${id}`, {
                 method: 'DELETE',
             });
 
@@ -142,7 +142,7 @@ const ToDoApp = () => {
         const taskToUpdate = tasks.find((task) => task._id === id);
         const updatedTask = { completed: !taskToUpdate.completed };
         try {
-            const response = await fetch(`http://localhost:5000/api/tasks/complete/${id}`, {
+            const response = await fetch(`https://to-do-mongoose-server-two.vercel.app/api/tasks/complete/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
