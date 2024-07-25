@@ -20,9 +20,6 @@ A simple and efficient To-Do application built with React and Redux, allowing us
   
 ### Main View
 
-<<<<<<< HEAD
 ![Main View](./src/assets/logo/Screenshot%202024-07-26%20013318.png)
-=======
-![Main View](https://i.ibb.co/fqjHCQZ/main-view.png)
->>>>>>> f85b0448f91901963fd746602674896d3c993656
+
 
